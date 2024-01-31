@@ -50,7 +50,7 @@ const Services = () => {
                                 <p>
                                 {item?.title}
                                 </p>
-                                <Link onClick={scrollToTop} className="Link" to="/services/">
+                                <Link onClick={scrollToTop} className="Link" to="/">
                                 <ImArrowUpRight2 />
 
 

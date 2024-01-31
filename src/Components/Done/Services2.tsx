@@ -2,17 +2,18 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Services2 = () => {
+
     const navigate = useNavigate()
     const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      navigate("/services")
+      window.scrollTo({ top: 670, behavior: 'smooth' });
+      navigate("/")
     };
   
   return (
     <div className='Services2_Section'>
         <h1>Popular Packages</h1>
         <div className='Services2_images'>
-      
+
        <div  onClick={scrollToTop}>
             <img src="../Services2/dentist.jpeg" alt="" />
             <h1>dentist</h1>
