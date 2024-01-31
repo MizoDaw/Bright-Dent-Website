@@ -75,9 +75,11 @@ const NewHeroSection = () => {
             <button className='Button1' onClick={showModal}>
               Find diagnostics <FaArrowAltCircleRight />
             </button>
-            <button className='Button2' onClick={() => navigate("/doctors")}>
-              <FaUser /> See Our Doctors
+            <a href='#Services'>
+            <button className='Button2' >
+              <FaUser /> See Our Services
             </button>
+            </a>
           </div>
         </div>
       </div>

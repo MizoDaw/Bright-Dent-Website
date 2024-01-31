@@ -20,7 +20,6 @@ const Footer3 = () => {
     title: 'Explore',
     links: [
       { icon: <IoIosArrowForward />, text: 'Home', href: '#NewHeroSection' },
-      { icon: <IoIosArrowForward />, text: 'Doctors', to: '/doctors' },
       { icon: <IoIosArrowForward />, text: 'Services', href: '#Services' },
       { icon: <IoIosArrowForward />, text: 'Blog', href: '#Update' },
       { icon: <IoIosArrowForward />, text: 'Reviews', href: '#Reviews' },
@@ -63,7 +62,7 @@ const Footer3 = () => {
           <h1>{exploreData.title}</h1>
           <ul className='Links'>
             {exploreData.links.map((link, index) => (
-              <li key={index}> {link.icon} {link.to ? <Link to={link.to}>{link.text}</Link> : <a href={link.href}>{link.text}</a>} </li>
+              <li key={index}> {link.icon}  <a href={link.href}>{link.text}</a> </li>
             ))}
           </ul>
         </span>

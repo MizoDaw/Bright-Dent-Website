@@ -16,20 +16,20 @@ const Services2 = () => {
 
        <div  onClick={scrollToTop}>
             <img src="../Services2/dentist.jpeg" alt="" />
-            <h1>dentist</h1>
+            <h1>Dentist</h1>
         </div>
         <span onClick={scrollToTop}>
-            <img src="../Services2/physician.webp" alt="" />
-            <h1>physician</h1>
+            <img src="../Services2/dentist.jpeg" alt="" />
+            <h1>Dentist</h1>
         </span>
        <span onClick={scrollToTop}>
-            <img src="../Services2/physician.webp" alt="" />
-            <h1>physician</h1>
+            <img src="../Services2/dentist.jpeg" alt="" />
+            <h1>Dentist</h1>
         </span>
 
         <div onClick={scrollToTop}>
             <img src="../Services2/dentist.jpeg" alt="" />
-            <h1>dentist</h1>
+            <h1>Dentist</h1>
         </div>
         </div>
 
