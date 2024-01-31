@@ -52,7 +52,7 @@ const Footer3 = () => {
           <span>
             {aboutUsData.contactInfo.map((info, index) => (
               <div key={index}>
-                {info.icon} <h6 className='work_time'>{info.title}</h6> <p>{info.content}</p>
+                {info.icon} <h6 className='work_time_h'>{info.title}</h6> <p className='work_time_p'>{info.content}</p>
               </div>
             ))}
           </span>
