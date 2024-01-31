@@ -1,0 +1,269 @@
+.Doctors_Page .Header ,.Header.Scrolled,
+.Services_Page .Header
+,.Blog_Page .Header
+{
+    background-color: var(--bg) ;
+    @include Shadow;
+    color: var(--text);
+    box-shadow:  none !important;
+    width: 100%;
+    transform: translateX(0%);
+    padding-inline: 5%;
+
+
+
+    
+  }
+  .Blog_Page .HeaderStart{
+    background-color: transparent !important;
+    box-shadow:  none !important;
+  
+  }
+  .Services_Page .HeaderStart{
+    height: 70px !important;
+  }
+ 
+.Header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: var(--white);
+    height: 100px;
+    z-index: 1;
+    font-family: 'Niramit';
+    font-weight: bold;
+    z-index: 999999;
+    // margin-inline: auto;
+    // background: var(--bg);
+    border-bottom: .6px rgba(255, 255, 255, 0.2)  dashed ;
+    transform: translateX(5%);
+    width: 90% ;
+    padding-inline: 0%;
+
+    .nav_logo {
+        width: 20% !important;
+    //    width: 6vw;
+    }
+
+    nav {
+        @include Flex;
+    z-index: 5;
+
+        .Links {
+            margin-bottom: 0;
+            @include Flex;
+            gap: 3vw;
+
+            svg {
+                height: 45px;
+                // cursor: pointer;
+
+            }
+
+            li {
+                all: unset;
+                @include underLineText(var(--primary), var(--secondary));
+                // cursor: pointer;
+                padding-bottom: 1px;
+
+
+                &:last-child {
+                    display: flex;justify-content: center; align-items: center;
+                    background: var(--secondary);
+                    border-radius: 30px;
+                    color: var(--white);
+                    padding: 6px 30px;
+                    text-wrap: nowrap;
+                    opacity: 1;
+                    height: 30px;
+                    margin: auto;
+                    transition: .3s ease-in-out;
+
+                    text-align: center;
+                    &:hover{
+                        scale: 1.1;
+                        background: var(--primary);
+                        color: var(--white);
+                        transition: .3s ease-in-out;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.Translate,
+.Theme {
+    li {
+        list-style: none;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    img {
+        margin-inline: 6px;
+        display: inline !important;
+    }
+}
+
+.Header {
+    .ant-btn-default {
+        all: unset;
+    }
+
+    .ant-space-gap-col-small .ant-space-item .ant-dropdown-open {
+        background-color: var(--primary);
+        color: var(--vg);
+        border-width: 0px;
+
+        @include Hover;
+
+
+    }
+
+    /* List */
+    .ant-dropdown-placement-bottom ul {
+        background-color: var(--bg) !important;
+        color: var(--primary);
+
+        svg {
+            margin-inline: 5px;
+        }
+    }
+
+    /* List Item */
+    .ant-dropdown-menu li {
+        color: var(--primary) !important;
+    }
+
+    :where(.css-dev-only-do-not-override-1adbn6x).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+        color: var(--secondary);
+        border-color: var(--secondary);
+    }
+
+    .MenuChange {
+
+        svg,
+        img {
+            margin-inline: 5px;
+        }
+    }
+
+    .Menu_Group {
+        @include Flex;
+        gap: 20px;
+    }
+
+
+
+    .NavMenus .ant-space-item span {
+        color: var(--text);
+    }
+
+    /* Svg */
+    .MidBar_Right a svg {
+        color: var(--text);
+    }
+
+    /* Svg */
+    .MidBar_Right .ViewCart svg {
+        color: var(--text);
+    }
+
+    /* Special property */
+    .special_properties .Towspecial_property .special_property {
+        color: var(--text);
+    }
+}
+
+.MenuNav {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+  
+}
+@media screen and (max-width: 800px) {
+    .Doctors_Page .Header ,.Header.Scrolled {
+        background-color:transparent !important;
+        @include Shadow;
+        color: var(--text);
+    
+        
+      }
+    .MenuNav {
+        display: block;
+    }
+
+    .MenuLinks {
+        display: none !important;
+    }
+
+    .Header {
+
+        h1 {
+            font-size: 6vw;
+        }
+    }
+}
+
+
+
+ .DrawerLinks {
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+
+
+            svg {
+                height: 45px;
+                // cursor: pointer;
+
+            }
+
+            ul{
+                padding-left: 0 !important;
+            }
+            li {
+                all: unset;
+                @include underLineText(var(--primary), var(--secondary));
+                // cursor: pointer;
+                padding-bottom: 1px;
+                opacity: .6;
+                font-size: 20px;
+                                padding-left: 0 !important;
+
+                a{
+                    &:hover{
+                    color: var(--secondary) !important;
+                    font-weight: bold;
+                }
+                }
+
+                &:has(.active) {
+                    color: var(--secondary);
+                    opacity: 1 !important;
+
+                }
+
+
+            }
+        }
+
+
+
+        :where(.css-dev-only-do-not-override-p7e5j5).ant-float-btn-primary .ant-float-btn-body{
+            background: var(--primary) !important;
+        }

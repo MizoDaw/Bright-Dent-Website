@@ -1,0 +1,59 @@
+@keyframes imageL {
+    from{
+      border-radius: 0;
+      transform: translateX(-100vw);
+
+    }
+    70%{
+      border-radius: 0;
+    }
+    90%{
+      transform: translateX(0vw);
+
+
+    }
+      to {
+          border-radius: 32px;
+
+      }
+    }
+    @keyframes imageR {
+        from{
+          border-radius: 0;
+          transform: translateX(100vw);
+
+        }
+        70%{
+          border-radius: 0;
+        }
+        90%{
+          transform: translateX(0vw);
+
+
+        }
+          to {
+              border-radius: 32px;
+
+          }
+        }
+
+        @keyframes DivR {
+            from{
+              transform: translateX(100vw);
+
+            }
+              to {
+                  transform: translateX(0vw);
+
+              }
+            }
+            @keyframes DivL {
+                from{
+                  transform: translateX(-100vw);
+
+                }
+                  to {
+                      transform: translateX(0vw);
+
+                  }
+                }

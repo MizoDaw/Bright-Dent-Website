@@ -1,0 +1,267 @@
+.Doctors_Page {
+    font-family: "Inter", Sans-serif;
+
+    .Doctors {
+
+        min-height: 500px;
+        width: 100%;
+
+        .Hero_Doctors {
+            background-image: url('../../../public/Doctors/Doctors_Hero.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 96vw;
+            height: 30vw;
+            margin-inline: auto;
+            // margin-top: 115px;
+            position: relative;
+            padding-top: 100px;
+
+            >div {
+                position: absolute;
+                top: 25%;
+                left: 10%;
+
+                h1 {
+                    font-size: 4vw;
+                    font-weight: bold;
+                }
+
+                >div {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    h5 {
+                        color: var(--primary);
+                        font-size: 1.5vw;
+                    }
+
+                    h6 {
+                        font-size: 1.5vw;
+
+                    }
+                }
+            }
+        }
+
+        .Docor_Cards {
+            min-height: 400px;
+            margin-inline: auto;
+            width: 100%;
+            padding-inline: 5vw;
+            padding-top: 60px;
+            margin-block: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            // @include Shadow;
+
+            .DoctorCard {
+                position: relative;
+                width: 260px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 80px 10px 10px 10px;
+                background: var(--bg);
+                box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.07);
+                height: 270px;
+                border-radius: 50px;
+                text-align: center;
+                transition: .7s ease-in-out;
+                cursor: pointer;
+
+                margin-inline: auto;
+                margin-bottom: 60px;
+
+                img {
+                    position: absolute;
+                    top: -50px;
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+
+                }
+
+                h1 {
+                    font-size: 25px;
+                }
+
+                h5 {
+                    font-size: 13px;
+
+                }
+
+                &:hover {
+                    background: var(--primary);
+                    transition: .7s ease-in-out;
+                    color: var(--white);
+                    scale: 1.02;
+
+                    a {
+                        color: var(--white);
+                        border-bottom: 1px solid var(--white);
+                        padding-bottom: 2px;
+                    }
+                }
+
+                a {
+                    color: var(--primary);
+                    border-bottom: 1px solid var(--primary);
+                    padding-bottom: 2px;
+                }
+            }
+        }
+
+        .Filter {
+            margin-inline: auto;
+            margin-top: 100px;
+            // @include Shadow;
+            width: 90%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            min-height: 50px;
+            h1{
+                font-weight: bold;
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .Doctors {
+
+        min-height: 500px;
+        width: 100%;
+        padding-top: 70px;
+
+        .Hero_Doctors {
+            background-image: url('../../../public/Doctors/Doctors_Hero.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 96vw;
+            height: 20vw;
+            // margin-top: 115px;
+            position: relative;
+
+            // margin-top:50px;
+            >div {
+                position: absolute;
+                top: 25%;
+                left: 10%;
+
+                h1 {
+                    font-size: 4vw;
+                    font-weight: bold;
+                }
+
+                >div {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    h5 {
+                        color: var(--primary);
+                        font-size: 1.5vw;
+                    }
+
+                    h6 {
+                        font-size: 1.5vw;
+
+                    }
+                }
+            }
+        }
+
+        .Docor_Cards {
+            min-height: 400px;
+            width: 100%;
+            padding-inline: 5vw;
+            margin-block: 170px;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 30px;
+
+            .DoctorCard {
+                position: relative;
+                width: 260px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 80px 10px 10px 10px;
+                background: var(--bg);
+                box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.07);
+                height: 270px;
+                border-radius: 50px;
+                text-align: center;
+                transition: .7s ease-in-out;
+                cursor: pointer;
+
+                margin-inline: auto;
+                margin-bottom: 60px;
+
+                img {
+                    position: absolute;
+                    top: -50px;
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+
+                }
+
+                h1 {
+                    font-size: 25px;
+                }
+
+                h5 {
+                    font-size: 13px;
+
+                }
+
+                &:hover {
+                    background: var(--primary);
+                    transition: .7s ease-in-out;
+                    color: var(--white);
+                    scale: 1.02;
+
+                    a {
+                        color: var(--white);
+                        border-bottom: 1px solid var(--white);
+                        padding-bottom: 2px;
+                    }
+                }
+
+                a {
+                    color: var(--primary);
+                    border-bottom: 1px solid var(--primary);
+                    padding-bottom: 2px;
+                }
+            }
+        }
+        .Filter {
+            margin-inline: auto;
+            margin-top: 100px;
+            // @include Shadow;
+            width: 90%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 50px;
+            h1{
+                font-weight: bold;
+                font-size: 4vw !important ;
+                margin-bottom: 10px ;
+            }
+        }
+    }
+}
