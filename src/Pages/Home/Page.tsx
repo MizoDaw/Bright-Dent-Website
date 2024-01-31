@@ -6,15 +6,15 @@ import Services2 from '../../Components/Done/Services2'
 import Partners from '../../Components/Done/Partners'
 
 const Page = () => {
+  
   return (
     <>
-    <NewHeroSection/>
-    <Services/>
-    <Services2/>
-    <Reviews/>
-    <Update/>
-    <Partners/>
-
+      <NewHeroSection/>
+      <Services/>
+      <Services2/>
+      <Reviews/>
+      <Update/>
+      <Partners/>
     </>
   )
 }
