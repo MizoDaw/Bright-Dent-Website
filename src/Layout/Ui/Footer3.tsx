@@ -41,7 +41,7 @@ const Footer3 = () => {
     },
   ];
 
-  const footerText = 'Like-themes 2023 © All Rights reserved Bright Dent Health';
+  const footerText = 'Like-themes 2023 © All Rights reserved Bright Dent';
 
   return (
     <div className='Footer3'>

@@ -1,0 +1,77 @@
+
+.Translate{
+    z-index: 9999999999999999999999999 !important;
+    li{
+      list-style: none;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+      div{
+          display: flex; align-items: center; justify-content: center; gap: 5px;
+      }
+      img{
+          margin-inline: 6px;
+          display: inline !important;
+      }
+  }
+  .ant-btn-default{
+     all: unset;
+  }
+  
+  .ant-space-gap-col-small .ant-space-item .ant-dropdown-open{
+      background-color:var(--primary);
+      color: var(--vg);
+      border-width:0px; 
+      z-index: 9999999999999999999999999 !important;
+
+      
+      @include Hover;
+      
+  
+     }
+     
+     /* List */
+     .ant-dropdown-placement-bottom ul{
+      background-color:var(--bg) !important;
+      color: var(--primary);
+      
+      svg{
+          margin-inline: 5px;
+      }
+     }
+     
+     /* List Item */
+     .ant-dropdown-menu li{
+      color:var(--primary) !important;
+     }
+     :where(.css-dev-only-do-not-override-1adbn6x).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+      color: var(--secondary);
+      border-color: var(--secondary);
+     }
+     .MenuChange{
+     svg,img{
+      margin-inline: 5px;
+     }
+     }
+//      .Menu_Group{
+//       @include Flex;
+//       gap: 20px;
+//      }
+// //    .MenuNav{
+// //       display: none;
+// //    }
+  
+//    .NavMenus .ant-space-item span{
+//    color:var(--text);
+//   }
+  
+//   /* Svg */
+//   .MidBar_Right a svg{
+//    color:var(--text);
+//   }
+  
+//   /* Svg */
+//   .MidBar_Right .ViewCart svg{
+//    color:var(--text);
+//   }
+  

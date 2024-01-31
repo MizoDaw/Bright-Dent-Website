@@ -31,16 +31,13 @@
     background: transparent;
     color: var(--white);
     height: 100px;
-    z-index: 1;
     font-family: 'Niramit';
     font-weight: bold;
-    z-index: 999999;
-    // margin-inline: auto;
-    // background: var(--bg);
+    z-index: 999;
+    margin-inline: 20px;
     border-bottom: .6px rgba(255, 255, 255, 0.2)  dashed ;
-    transform: translateX(5%);
-    width: 90% ;
-    padding-inline: 0%;
+    width: 97% ;
+    // padding-inline: 0%;
 
     
     .logo_link{
@@ -202,8 +199,11 @@
       }
     .MenuNav {
         display: block;
+        padding-inline: 20px;
     }
-
+    .translate_link{
+        display: none !important;
+    }
     .MenuLinks {
         display: none !important;
     }
@@ -225,7 +225,6 @@
             margin-bottom: 0;
             display: flex;
             
-            // background: #000;
             flex-direction: column;
             gap: .2vw;
 
@@ -273,3 +272,4 @@
             padding:  0 !important;
             padding-top: 20px !important;
         }
+

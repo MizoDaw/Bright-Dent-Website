@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 import ContactForm from '../../Components/Done/ContactForm';
 import { TbPointFilled } from "react-icons/tb";
+import Translate from '../../Components/Utils/Translate';
 
 const Header = () => {
   const [t] = useTranslation();
@@ -52,6 +53,7 @@ const Header = () => {
           <li> <a href='/#Services'>{t('Services')}</a> </li>
           <li> <a href='/#Update'>{t('blog')}</a> </li>
           <li> <a href='/#Reviews'>{t('Reviews')}</a> </li>
+          <li className='translate_link'> <Translate/></li>
           <li> <div  onClick={showModal}>{t('Contact Us')} <FaArrowAltCircleRight /></div> </li>
         </ul>
         <div className='MenuNav'>
@@ -66,6 +68,7 @@ const Header = () => {
           <li><TbPointFilled/> <a href='/#Update'>{t('blog')}</a> </li>
           <li><TbPointFilled/> <a href='/#Reviews'>{t('Reviews')}</a> </li>
           <li><TbPointFilled/> <a  onClick={showModal}>{t('Contact Us')} <FaArrowAltCircleRight /></a> </li>
+          <li className=''> <Translate/></li>
             </ul>
           </WithDrawer>
         </div>

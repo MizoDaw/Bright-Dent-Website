@@ -11,7 +11,7 @@ const Update = () => {
     ];
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        navigate("/blog")
+        navigate("/")
       };
     return (
         <div className='Update' id="Update">
