@@ -6,6 +6,7 @@ import { Button } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 import ContactForm from '../../Components/Done/ContactForm';
+import { TbPointFilled } from "react-icons/tb";
 
 const Header = () => {
   const [t] = useTranslation();
@@ -58,13 +59,13 @@ const Header = () => {
             title='Nav Links'
             button={<Button icon={<MenuOutlined />} type='primary' />}
           >
-            <ul className='DrawerLinks'>
-            <li> <a href='/#NewHeroSection'>{t('Home')}</a> </li>
-          <li> <Link to='/doctors'>{t('Doctors')}</Link> </li>
-          <li> <a href='/#Services'>{t('Services')}</a> </li>
-          <li> <a href='/#Update'>{t('blog')}</a> </li>
-          <li> <a href='/#Reviews'>{t('Reviews')}</a> </li>
-          <li> <div  onClick={showModal}>{t('Contact Us')} <FaArrowAltCircleRight /></div> </li>
+        <ul className='DrawerLinks'>
+          <li><TbPointFilled/> <a href='/#NewHeroSection'>{t('Home')}</a> </li>
+          <li><TbPointFilled/> <Link to='/doctors'>{t('Doctors')}</Link> </li>
+          <li><TbPointFilled/> <a href='/#Services'>{t('Services')}</a> </li>
+          <li><TbPointFilled/> <a href='/#Update'>{t('blog')}</a> </li>
+          <li><TbPointFilled/> <a href='/#Reviews'>{t('Reviews')}</a> </li>
+          <li><TbPointFilled/> <a  onClick={showModal}>{t('Contact Us')} <FaArrowAltCircleRight /></a> </li>
             </ul>
           </WithDrawer>
         </div>

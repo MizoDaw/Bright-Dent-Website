@@ -224,28 +224,31 @@
  .DrawerLinks {
             margin-bottom: 0;
             display: flex;
+            
+            // background: #000;
             flex-direction: column;
-            gap: 2vw;
+            gap: .2vw;
 
 
             svg {
                 height: 45px;
-                // cursor: pointer;
-
             }
 
             ul{
                 padding-left: 0 !important;
             }
             li {
+                svg{
+                    color: var(--secondary);
+                }
                 all: unset;
                 @include underLineText(var(--primary), var(--secondary));
                 // cursor: pointer;
                 padding-bottom: 1px;
-                opacity: .6;
+                opacity: .8;
+                
                 font-size: 20px;
-                                padding-left: 0 !important;
-
+                padding-left: 0 !important;
                 a{
                     &:hover{
                     color: var(--secondary) !important;
@@ -263,8 +266,10 @@
             }
         }
 
-
-
         :where(.css-dev-only-do-not-override-p7e5j5).ant-float-btn-primary .ant-float-btn-body{
             background: var(--primary) !important;
+        }
+        .ant-drawer-body{
+            padding:  0 !important;
+            padding-top: 20px !important;
         }
