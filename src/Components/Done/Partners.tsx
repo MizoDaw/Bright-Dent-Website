@@ -2,7 +2,7 @@ import React from 'react'
 
 const Partners = () => {
 
-    const PartnersArray = ["2","2", "2","2","2", "2","2","2", "2","2","2", "2"];
+    const PartnersArray = ["2", "2","2","2", "2","2","2", "2"];
 
     return (
         <div className='Partners'>
