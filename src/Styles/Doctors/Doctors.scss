@@ -10,7 +10,7 @@
             background-image: url('../../../public/Doctors/Doctors_Hero.png');
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             width: 96vw;
             height: 30vw;
             margin-inline: auto;
@@ -145,7 +145,7 @@
             background-image: url('../../../public/Doctors/Doctors_Hero.png');
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover !important;
             width: 96vw;
             height: 20vw;
             // margin-top: 115px;

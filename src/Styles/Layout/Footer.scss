@@ -16,11 +16,11 @@
 }
 >span{
     position: relative;
-        border-top: .6px var(--secondary)  dashed ;
         display: flex;align-items: flex-start;justify-content: space-between;
         padding: 30px 0px 30px 0px;
         margin-inline: auto;
         width: 90%;
+        margin-bottom: 20px;
         h1{
             color: var(--secondary);
             font-weight: bold;
@@ -111,6 +111,7 @@
             }
         }
     .TopFooter{
+        border: .6px var(--secondary)  dashed ;
             flex-direction: column;
             h1{
                 font-size: 30px;

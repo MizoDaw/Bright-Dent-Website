@@ -42,9 +42,12 @@
     width: 90% ;
     padding-inline: 0%;
 
-    .nav_logo {
-        width: 20% !important;
-    //    width: 6vw;
+    
+    .logo_link{
+        width: 15%;
+        .nav_logo {
+            width: 100% !important;
+        }
     }
 
     nav {
@@ -191,16 +194,11 @@
     display: none;
 }
 
-@media screen and (max-width: 900px) {
-  
-}
 @media screen and (max-width: 800px) {
     .Doctors_Page .Header ,.Header.Scrolled {
         background-color:transparent !important;
         @include Shadow;
-        color: var(--text);
-    
-        
+        color: var(--text); 
       }
     .MenuNav {
         display: block;
@@ -215,6 +213,9 @@
         h1 {
             font-size: 6vw;
         }
+    }
+    .logo_link{
+        width: 30% !important;
     }
 }
 

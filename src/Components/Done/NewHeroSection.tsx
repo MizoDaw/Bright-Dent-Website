@@ -55,7 +55,8 @@ const NewHeroSection = () => {
     setInfoData(data[index]);
     setKey(index);
   };
-  const moaz = (window.innerWidth = 500);
+  
+  // const moaz = (window.innerWidth = 500);
 
   return (
     <>
