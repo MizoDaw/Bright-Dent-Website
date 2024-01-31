@@ -913,12 +913,11 @@
             color: var(--white);
             padding-inline: 10%;
             width: 100%;
-            height: 100vh;
-            background-repeat: no-repeat;
+            height: 80vh;
+            background-size:cover ;
             position: relative;
             overflow: hidden;
             animation: backgroundAn 10s ease-in-out;
-            background-size: 100%;
             background-position: center;
 
             @keyframes backgroundAn {
@@ -943,6 +942,7 @@
             }
 
             .imNewHeroSection {
+                margin-top: 50px;
                 position: absolute;
                 top: 30%;
                 left: 50%;
@@ -1351,7 +1351,7 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 580px) {
     .Home_Page {
         .NewHeroSection {
             .imNewHeroSection {

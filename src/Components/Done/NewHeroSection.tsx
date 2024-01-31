@@ -55,12 +55,17 @@ const NewHeroSection = () => {
     setInfoData(data[index]);
     setKey(index);
   };
-  
-  // const moaz = (window.innerWidth = 500);
+
+  const stopAnimation =  900;
+  // if(window.innerWidth > moaz){
+  //   return 
+  // }  
 
   return (
     <>
-      <div className='NewHeroSection' id='NewHeroSection' style={{ backgroundImage: `url(../Home/Hero/${infoData.image}.webp)` }} key={key}>
+      {/* {
+        window.innerWidth >stopAnimation? */}
+        <div className='NewHeroSection' id='NewHeroSection' style={{ backgroundImage: `url(../Home/Hero/${infoData.image}.webp)` }} key={key}>
         <div className='imNewHeroSection' key={key}>
           <div>
             <h1>{infoData?.h1}</h1> <h2>{infoData?.h2}</h2>
@@ -76,6 +81,24 @@ const NewHeroSection = () => {
           </div>
         </div>
       </div>
+      {/* //   :
+      //   <div className='NewHeroSection' id='NewHeroSection' style={{backgroundImage: "url(../Home/Hero/1.webp)"}} key={key}>
+      //   <div className='imNewHeroSection' key={key}>
+      //     <div>
+      //       <h1>{infoData?.h1}</h1> <h2>{infoData?.h2}</h2>
+      //     </div>
+      //     <p> {infoData?.info} </p>
+      //     <div>
+      //       <button className='Button1' onClick={showModal}>
+      //         Find diagnostics <FaArrowAltCircleRight />
+      //       </button>
+      //       <button className='Button2' onClick={() => navigate("/doctors")}>
+      //         <FaUser /> See Our Doctors
+      //       </button>
+      //     </div>
+      //   </div>
+      // </div>
+      // } */}
       <ContactForm isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <div className='Image_Controller'>
         {data.map((item, index) => (
