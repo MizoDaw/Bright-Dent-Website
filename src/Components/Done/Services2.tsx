@@ -5,10 +5,10 @@ const Services2 = () => {
 
     const navigate = useNavigate()
     const scrollToTop = () => {
-      window.scrollTo({ top: 670, behavior: 'smooth' });
+      window.scrollTo({ top: 650, behavior: 'smooth' });
       navigate("/")
     };
-  
+
   return (
     <div className='Services2_Section'>
         <h1>Popular Packages</h1>
