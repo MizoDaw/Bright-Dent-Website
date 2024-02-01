@@ -1,32 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import { FaArrowAltCircleRight, FaUser } from 'react-icons/fa';
 import ContactForm from './ContactForm';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa6';
+import { useTranslation } from 'react-i18next';
+import { Tooltip } from 'antd';
 
-const data = [
-  {
-    image: '1',
-    h1: 'Medical',
-    h2: 'Laboratory',
-    info: '1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem',
-  }
-  ,
-  {
-    image: '2',
-    h1: 'Diagnostic',
-    h2: 'Center',
-    info: '2Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem',
-  },
-  {
-    image: '3',
-    h1: 'Computer',
-    h2: 'Diagram',
-    info: '3Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem',
-  },
-];
+
 
 const NewHeroSection = () => {
+  const {t} = useTranslation()
+
+  const data = [
+    {
+      image: '1',
+      h1: t('Medical'),
+      h2: t('Laboratory'),
+      info: '1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem',
+    }
+    ,
+    {
+      image: '2',
+      h1: t('Diagnostic'),
+      h2: t('Center'),
+      info: '2Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem',
+    },
+    {
+      image: '3',
+      h1: t('Computer'),
+      h2: t('Diagram'),
+      info: '3Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem',
+    },
+  ];
+
   const [infoData, setInfoData] = useState(data[0]);
   const [key, setKey] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -57,14 +63,10 @@ const NewHeroSection = () => {
   };
 
   const stopAnimation =  900;
-  // if(window.innerWidth > moaz){
-  //   return 
-  // }  
+
 
   return (
     <>
-      {/* {
-        window.innerWidth >stopAnimation? */}
         <div className='NewHeroSection' id='NewHeroSection' style={{ backgroundImage: `url(../Home/Hero/${infoData.image}.webp)` }} key={key}>
         <div className='imNewHeroSection' key={key}>
           <div>
@@ -73,34 +75,16 @@ const NewHeroSection = () => {
           <p> {infoData?.info} </p>
           <div>
             <button className='Button1' onClick={showModal}>
-              Find diagnostics <FaArrowAltCircleRight />
+              {t("Find diagnostics")} <FaArrowAltCircleRight />
             </button>
             <a href='#Services'>
             <button className='Button2' >
-              <FaUser /> See Our Services
+              <FaUser /> {t("See Our Services")}
             </button>
             </a>
           </div>
         </div>
       </div>
-      {/* //   :
-      //   <div className='NewHeroSection' id='NewHeroSection' style={{backgroundImage: "url(../Home/Hero/1.webp)"}} key={key}>
-      //   <div className='imNewHeroSection' key={key}>
-      //     <div>
-      //       <h1>{infoData?.h1}</h1> <h2>{infoData?.h2}</h2>
-      //     </div>
-      //     <p> {infoData?.info} </p>
-      //     <div>
-      //       <button className='Button1' onClick={showModal}>
-      //         Find diagnostics <FaArrowAltCircleRight />
-      //       </button>
-      //       <button className='Button2' onClick={() => navigate("/doctors")}>
-      //         <FaUser /> See Our Doctors
-      //       </button>
-      //     </div>
-      //   </div>
-      // </div>
-      // } */}
       <ContactForm isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <div className='Image_Controller'>
         {data.map((item, index) => (
@@ -108,10 +92,9 @@ const NewHeroSection = () => {
         ))}
       </div>
       <div className='Social_Controller'>
-        <div><FaFacebook/></div>
-        <div><FaInstagram/></div>
-        <div><FaTwitter/></div>
-
+        <div><Tooltip title="Facebook.com" ><Link to={"https://facebook.com/"}><FaFacebook/></Link></Tooltip></div>
+        <div><Tooltip title="Instagram.com" ><Link to={"https://instagram.com/"}><FaInstagram/></Link></Tooltip></div>
+        <div><Tooltip title="Twitter.com" ><Link to={"https://twitter.com/"}><FaTwitter/></Link></Tooltip></div>
       </div>
     </>
   );

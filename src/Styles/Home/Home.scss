@@ -33,7 +33,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            opacity: 0.8;
+            opacity: 0.3;
             height: 30%;
             background-image: linear-gradient(180deg, #131623, transparent);
             z-index: 1;
@@ -137,7 +137,7 @@
 
     .Services {
         position: relative;
-        max-width: 100vw;
+        max-width: 98vw;
         margin-block: 70px;
 
         .in {
@@ -947,7 +947,7 @@
                 top: 30%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                z-index: 999;
+                z-index: 99;
                 display: flex;
                 align-items: center;
                 gap: 20px;

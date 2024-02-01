@@ -1,13 +1,16 @@
 import { Rate } from 'antd'
 import React, { useState } from 'react'
 import Visibale from '../../HighOrderComponent/withVisibale'
+import { useTranslation } from 'react-i18next'
 
 const Reviews = () => {
     const [main, setmain] = useState(1)
+    const {t} = useTranslation();
+    
   return (
     <Visibale className='Reviews' id="Reviews">
         <h6>Our Service & Testimonial</h6>
-        <h1>Service & Reviews</h1>
+        <h1>{t("Service & Reviews")}</h1>
         <div>
             <img src="../Home/review.png" alt="" />
             <div className='Reviews_Info'>

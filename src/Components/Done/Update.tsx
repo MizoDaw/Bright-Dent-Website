@@ -1,13 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 const Update = () => {
     const navigate = useNavigate();
-
+    const {t} = useTranslation();
     const updatesData = [
       
-        { id: 1, date: 'Dec 1, 2023', title: 'Explore the essentials of heart care', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis enim sit amet placerat vestibulum.', reviewAuthor: 'Ahmed Mouhsen', reviewText: 'Happy Patients', image: '../Home/Update/Update1.png', reviewImage: '../Home/Update/review1.png' },
-        { id: 2, date: 'Dec 1, 2023', title: 'Explore the essentials of heart care', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis enim sit amet placerat vestibulum.', reviewAuthor: 'Ahmed Mouhsen', reviewText: 'Happy Patients', image: '../Home/Update/Update2.png', reviewImage: '../Home/Update/review2.png' },
-        { id: 3, date: 'Dec 1, 2023', title: 'Explore the essentials of heart care', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis enim sit amet placerat vestibulum.', reviewAuthor: 'Ahmed Mouhsen', reviewText: 'Happy Patients', image: '../Home/Update/Update3.png', reviewImage: '../Home/Update/review3.png' },
+        { id: 1, date: 'Dec 1, 2023', title: t('Explore the essentials of Dental care'), description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis enim sit amet placerat vestibulum.', reviewAuthor: 'Ahmed Mouhsen', reviewText: t('Happy Patients'), image: '../Home/Update/Update1.png', reviewImage: '../Home/Update/review1.png' },
+        { id: 2, date: 'Dec 1, 2023', title: t('Explore the essentials of Dental care'), description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis enim sit amet placerat vestibulum.', reviewAuthor: 'Ahmed Mouhsen', reviewText: t('Happy Patients'), image: '../Home/Update/Update2.png', reviewImage: '../Home/Update/review2.png' },
+        { id: 3, date: 'Dec 1, 2023', title: t('Explore the essentials of Dental care'), description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis enim sit amet placerat vestibulum.', reviewAuthor: 'Ahmed Mouhsen', reviewText: t('Happy Patients'), image: '../Home/Update/Update3.png', reviewImage: '../Home/Update/review3.png' },
     ];
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -17,8 +18,8 @@ const Update = () => {
         <div className='Update' id="Update">
             <div className='Update_Header'>
                 <div>
-                    <p>From The Blog</p>
-                    <h1>Latest Update</h1>
+                    <p>{t("From The Blog")}</p>
+                    <h1>{t("Latest Update")}</h1>
                 </div>
             </div>
             <div className="Update_Cards">
@@ -39,7 +40,7 @@ const Update = () => {
                                 </span>
                             </div>
                             <span className='learn_more' onClick={scrollToTop}>
-                                Learn more &rarr;
+                                {t("Learn more")} &rarr;
                             </span>
                         </span>
                     </div>

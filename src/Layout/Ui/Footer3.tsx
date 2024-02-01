@@ -4,25 +4,27 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
 import { FaTimes } from 'react-icons/fa';
 import { IoChatbubble } from "react-icons/io5";
+import { useTranslation } from 'react-i18next';
 
 const Footer3 = () => {
+  const {t} = useTranslation();
   const aboutUsData = {
-    title: 'About us',
-    description: 'provides services to the organization of international, medical tourism in leading hospitals and medical centers in the UAE Dubai..',
+    title: t('About us'),
+    description: t('Provides services to the organization of international, medical tourism in leading hospitals and medical centers in Iraq.'),
  contactInfo: [
-      { icon: <FaPhone />, title: 'HotLine: ', content: ' +963 958 261 912' },
-      { icon: <FaLocationDot />, title: 'Address: ', content: 'Damascus - Mazzeh ' },
-      { icon: <FaClock />, title: 'Mon-Sat: ', content: ' 9:00AM - 5:00PM' },
+      { icon: <FaPhone />, title: t('HotLine'), content: ' +963 958 261 912' },
+      { icon: <FaLocationDot />, title: t('Address'), content: 'Iraq - Erbiel ' },
+      { icon: <FaClock />, title: t('Mon-Sat'), content: ' 9:00AM - 5:00PM' },
     ],
   };
 
   const exploreData = {
-    title: 'Explore',
+    title: t('Explore'),
     links: [
-      { icon: <IoIosArrowForward />, text: 'Home', href: '#NewHeroSection' },
-      { icon: <IoIosArrowForward />, text: 'Services', href: '#Services' },
-      { icon: <IoIosArrowForward />, text: 'Blog', href: '#Update' },
-      { icon: <IoIosArrowForward />, text: 'Reviews', href: '#Reviews' },
+      { icon: <IoIosArrowForward />, text: t('Home'), href: '#NewHeroSection' },
+      { icon: <IoIosArrowForward />, text: t('Services'), href: '#Services' },
+      { icon: <IoIosArrowForward />, text: t('blog'), href: '#Update' },
+      { icon: <IoIosArrowForward />, text: t('Reviews'), href: '#Reviews' },
     ],
   };
 
@@ -31,17 +33,17 @@ const Footer3 = () => {
       image: '../Layout/Footer.jpg',
       date: 'November 7, 2018',
       comments: 6,
-      title: 'The best recreation areas for general immunity',
+      title: 'Torem  facilisis enim sit amet placerat vestibulum.',
     },
     {
       image: '../Layout/Footer2.jpg',
       date: 'November 7, 2018',
       comments: 1,
-      title: 'How can women protect themselves from breast cancer',
+      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
   ];
 
-  const footerText = 'Like-themes 2023 © All Rights reserved Bright Dent';
+  const footerText = t('Like-themes 2023 © All Rights reserved SDNone');
 
   return (
     <div className='Footer3'>
@@ -68,7 +70,7 @@ const Footer3 = () => {
         </span>
 
         <article>
-          <h1>Recent news</h1>
+          <h1>{t("Recent news")}</h1>
           <div>
             {recentNewsData.map((news, index) => (
               <span className='Recent_news' key={index}>
