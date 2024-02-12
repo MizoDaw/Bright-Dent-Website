@@ -6,9 +6,9 @@ const Update = () => {
     const {t} = useTranslation();
     const updatesData = [
       
-        { id: 1, date: 'Dec 1, 2023', title: t('Explore the essentials of Dental care'), description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis enim sit amet placerat vestibulum.', reviewAuthor: 'Ahmed Mouhsen', reviewText: t('Happy Patients'), image: '../Home/Update/Update1.png', reviewImage: '../Home/Update/review1.png' },
-        { id: 2, date: 'Dec 1, 2023', title: t('Explore the essentials of Dental care'), description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis enim sit amet placerat vestibulum.', reviewAuthor: 'Ahmed Mouhsen', reviewText: t('Happy Patients'), image: '../Home/Update/Update2.png', reviewImage: '../Home/Update/review2.png' },
-        { id: 3, date: 'Dec 1, 2023', title: t('Explore the essentials of Dental care'), description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis enim sit amet placerat vestibulum.', reviewAuthor: 'Ahmed Mouhsen', reviewText: t('Happy Patients'), image: '../Home/Update/Update3.png', reviewImage: '../Home/Update/review3.png' },
+        { id: 1, date: 'Dec 1, 2023', title: t('Explore the essentials of Dental care'), description: t('Regular Dental Checkups: Recommended every six months. Includes examination of teeth, gums, and mouth. Early detection of dental issues such as cavities.'), reviewAuthor: 'Moaz Mouhsen', reviewText: t('Happy Patients'), image: '../Layout/Update.jpg', reviewImage: '../Home/Update/review1.png' },
+        { id: 2, date: 'Jan 1, 2024', title: t('Explore the essentials of Dental care'), description: t('Daily Oral Hygiene Routine: Brushing teeth twice a day with fluoride toothpaste. Flossing daily to remove plaque and food particles between teeth.'), reviewAuthor: 'Lahleh Mouhsen', reviewText: t('Happy Patients'), image: '../Layout/Update2.jpg', reviewImage: '../Home/Update/review2.png' },
+        { id: 3, date: 'Feb 1, 2024', title: t('Explore the essentials of Dental care'), description: t('Preventive Treatments: Application of dental sealants to protect molars from decay. Fluoride treatments to strengthen tooth enamel and prevent cavities.'), reviewAuthor: 'Mhamad Mouhsen', reviewText: t('Happy Patients'), image: '../Layout/Update3.jpg', reviewImage: '../Home/Update/review3.png' },
     ];
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });

@@ -1,10 +1,21 @@
+import React, { ReactNode } from 'react'
+import QueryProvider from './lib/ReactQueryProvider'
 import { BrowserRouter } from 'react-router-dom'
-import { Tchildren } from './Layout/app/Types'
+import ToastProvider from './lib/ToastProvider'
 
-function ProviderContainer({children}:Tchildren) {
+type ProviderContainerProps =  {
+    children:ReactNode
+}
+
+function ProviderContainer({children}:ProviderContainerProps) {
+
   return (
- <BrowserRouter basename='/'>
+    <BrowserRouter basename='/'>
+     <QueryProvider>
+        <ToastProvider>
              {children}
+        </ToastProvider>
+    </QueryProvider>
 </BrowserRouter>
     )
 }

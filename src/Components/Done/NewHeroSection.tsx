@@ -14,22 +14,22 @@ const NewHeroSection = () => {
   const data = [
     {
       image: '1',
-      h1: t('Medical'),
-      h2: t('Laboratory'),
-      info: '1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem',
+      h1: t('Dental'),
+      h2: t('Care'),
+      info: t('Dental care encompasses practices aimed at maintaining oral hygiene and preventing/treating oral diseases, including regular checkups, cleanings, and treatments like fillings and implants. It plays a crucial role in promoting oral health, preventing dental issues, and enhancing overall well-being.'),
     }
     ,
     {
       image: '2',
-      h1: t('Diagnostic'),
-      h2: t('Center'),
-      info: '2Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem',
+      h1: t('Cosmetic'),
+      h2: t('Dentistry'),
+      info: t('Cosmetic dentistry focuses on improving the appearance of teeth, gums, and smile. It includes procedures like teeth whitening, veneers, bonding, and orthodontic treatments aimed at enhancing the aesthetic appeal of the teeth and overall smile.'),
     },
     {
-      image: '3',
-      h1: t('Computer'),
-      h2: t('Diagram'),
-      info: '3Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem Nam, odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, odio. lorem',
+      image: '4',
+      h1: t('General'),
+      h2: t('Dentistry'),
+      info: t('General dentistry involves the diagnosis, prevention, and treatment of common dental issues affecting the teeth, gums, and oral cavity. It encompasses routine dental care such as checkups, cleanings, fillings, and extractions, aimed at maintaining optimal oral health and preventing dental problems.'),
     },
   ];
 

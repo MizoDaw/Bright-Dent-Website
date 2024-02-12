@@ -53,6 +53,8 @@ const Header = () => {
           <li> <a href='/#Services'>{t('Services')}</a> </li>
           <li> <a href='/#Update'>{t('blog')}</a> </li>
           <li> <a href='/#Reviews'>{t('Reviews')}</a> </li>
+          <li> <a href='/about'>{t('About')}</a> </li>
+          <li> <a href='/privacy'>{t('Privcay')}</a> </li>
           <li className='translate_link'> <Translate/></li>
           <li> <div  onClick={showModal}>{t('Contact Us')} <FaArrowAltCircleRight /></div> </li>
         </ul>
@@ -67,6 +69,8 @@ const Header = () => {
           <li><TbPointFilled/> <a href='/#Services'>{t('Services')}</a> </li>
           <li><TbPointFilled/> <a href='/#Update'>{t('blog')}</a> </li>
           <li><TbPointFilled/> <a href='/#Reviews'>{t('Reviews')}</a> </li>
+          <li><TbPointFilled/> <a href='/about'>{t('About')}</a> </li>
+          <li><TbPointFilled/> <a href='/privacy'>{t('Privacy')}</a> </li>
           <li><TbPointFilled/> <a  onClick={showModal}>{t('Contact Us')} <FaArrowAltCircleRight /></a> </li>
           <li className=''> <Translate/></li>
             </ul>

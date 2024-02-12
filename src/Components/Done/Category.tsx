@@ -1,40 +1,38 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { useGetAllCategories } from '../../api/category';
+import { BaseURL } from '../../api/config';
 
 const Category = () => {
   const {t} = useTranslation();
-  const CategoriesArray = [
-    {title:"dent",image:"dentist"},
-    {title:"dent",image:"dentist"},
-    {title:"dental",image:"dentist"},
-    {title:"dent",image:"dentist"},
-    {title:"dent",image:"dentist"},
-    {title:"dent",image:"dentist"},
-    {title:"dent",image:"dentist"},
-    {title:"dent",image:"dentist"},
+  const {data , isLoading} = useGetAllCategories();
+    
 
-    {title:"dental nskj",image:"dentist"},
-
-  ];
-
+  
   return (
       <div className='Category_Section'>
           <h1 className='header'>{t("Categories")}</h1>
-          <div className='image_container'>
-              {CategoriesArray?.map((item,index)=>{
-              return(
-                  <div key={index}>
-                      <h1 className='category_title'>{t(`${item.title}`)}</h1>
-                      <img src={`../Services2/${item.image}.jpeg`} alt="" className='category_image' />
+          {
+            isLoading
+            ? t("loading")
+            : <div className='image_container'>
+            {data?.data.map((item:any)=>{
+            return(
+                <div className='data_container'>
+                    <div key={item.id}>
+                        <img src={BaseURL + item?.image} alt="" className='category_image' />
+                    </div>
+                    <h1 className='category_title'>{t(`${item.name}`)}</h1>
                   </div>
-                  )
-              })}
-          </div>
+                )
+            })}
+        </div>
+          }
+          
       </div>
   )
-}
+} 
 
 
 
-export default Category
+ export default Category 

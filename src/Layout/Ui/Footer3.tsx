@@ -5,41 +5,35 @@ import { IoIosArrowForward } from "react-icons/io";
 import { FaTimes } from 'react-icons/fa';
 import { IoChatbubble } from "react-icons/io5";
 import { useTranslation } from 'react-i18next';
+import { useGetContactInfo } from '../../api/contact';
+import { IoMdInformationCircle } from "react-icons/io";
 
 const Footer3 = () => {
   const {t} = useTranslation();
-  const aboutUsData = {
-    title: t('About us'),
-    description: t('Provides services to the organization of international, medical tourism in leading hospitals and medical centers in Iraq.'),
- contactInfo: [
-      { icon: <FaPhone />, title: t('HotLine'), content: ' +963 958 261 912' },
-      { icon: <FaLocationDot />, title: t('Address'), content: 'Iraq - Erbiel ' },
-      { icon: <FaClock />, title: t('Mon-Sat'), content: ' 9:00AM - 5:00PM' },
-    ],
-  };
+  const {data} = useGetContactInfo();  
 
   const exploreData = {
     title: t('Explore'),
     links: [
       { icon: <IoIosArrowForward />, text: t('Home'), href: '#NewHeroSection' },
       { icon: <IoIosArrowForward />, text: t('Services'), href: '#Services' },
-      { icon: <IoIosArrowForward />, text: t('blog'), href: '#Update' },
-      { icon: <IoIosArrowForward />, text: t('Reviews'), href: '#Reviews' },
+      { icon: <IoIosArrowForward />, text: t('About'), href: 'about' },
+      { icon: <IoIosArrowForward />, text: t('Privacy'), href: 'privacy' },
     ],
   };
 
   const recentNewsData = [
     {
-      image: '../Layout/Footer.jpg',
+      image: '../Layout/Footer.jpeg',
       date: 'November 7, 2018',
       comments: 6,
-      title: 'Torem  facilisis enim sit amet placerat vestibulum.',
+      title: t('Teeth Whitening ,Porcelain Veneers ,Dental Bonding, Smile Makeovers.'),
     },
     {
-      image: '../Layout/Footer2.jpg',
+      image: '../Layout/Update.jpg',
       date: 'November 7, 2018',
       comments: 1,
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: t('Tooth Extraction ,Wisdom Teeth Removal ,Dental Implant Surgery ,Bone Grafting.'),
     },
   ];
 
@@ -49,12 +43,11 @@ const Footer3 = () => {
     <div className='Footer3'>
       <span className='TopFooter'>
         <div>
-          <h1>{aboutUsData.title}</h1>
-          <p className='About_descritpion'>{aboutUsData.description}</p>
+          <h1>{t('Contact Info')}</h1>
           <span>
-            {aboutUsData.contactInfo.map((info, index) => (
-              <div key={index}>
-                {info.icon} <h6 className='work_time_h'>{info.title}</h6> <p className='work_time_p'>{info.content}</p>
+            {data?.data.map((e:any) => (
+              <div>
+               <IoMdInformationCircle/> <h6 className='work_time_h'>{e.key}: </h6> <p className='work_time_p'> {e.value}</p>
               </div>
             ))}
           </span>

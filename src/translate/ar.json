@@ -73,7 +73,41 @@
     "HotLine": "الخط الساخن:",
     "Partners": "شركاء",
     "Learn more": "تعلم المزيد",
-    "Categories":"الفئات"
+    "Categories":"الفئات",
+    "message": "رسالة",
+    "send_message": "إرسال الرسالة",
+    "Loading": "جار التحميل",
+    "Leave your messages and your email.": "اترك رسالتك وبريدك الإلكتروني.",
+    "Contact Info": "معلومات الاتصال",
+    "Privacy": "الخصوصية",
+    "About": "حول",
+    "Our Privacy": "خصوصيتنا",
+
+
+    "Dental care encompasses practices aimed at maintaining oral hygiene and preventing/treating oral diseases, including regular checkups, cleanings, and treatments like fillings and implants. It plays a crucial role in promoting oral health, preventing dental issues, and enhancing overall well-being.": "تشمل الرعاية الطبية الأسنان الممارسات التي تهدف إلى الحفاظ على نظافة الفم والوقاية/علاج الأمراض الفموية، بما في ذلك الفحوصات الدورية، التنظيف، والعلاجات مثل التعبئة والزرع. وتلعب دوراً حاسماً في تعزيز الصحة الفموية، ومنع مشاكل الأسنان، وتعزيز الرفاهية العامة.",
+    "Cosmetic dentistry focuses on improving the appearance of teeth, gums, and smile. It includes procedures like teeth whitening, veneers, bonding, and orthodontic treatments aimed at enhancing the aesthetic appeal of the teeth and overall smile.": "تركز طب الأسنان التجميلي على تحسين مظهر الأسنان واللثة والابتسامة. وتشمل الإجراءات مثل تبييض الأسنان، والتقويم، والتركيبات، والعلاجات الأخرى التي تهدف إلى تعزيز جاذبية الأسنان والابتسامة العامة.",
+    "General dentistry involves the diagnosis, prevention, and treatment of common dental issues affecting the teeth, gums, and oral cavity. It encompasses routine dental care such as checkups, cleanings, fillings, and extractions, aimed at maintaining optimal oral health and preventing dental problems.": "يشمل طب الأسنان العام تشخيص ووقاية وعلاج مشاكل الأسنان الشائعة التي تؤثر على الأسنان واللثة والتجويف الفموي. ويشمل الرعاية الطبية الأسنانية الروتينية مثل الفحوصات والتنظيف والتعبئة والقلع، بهدف الحفاظ على الصحة الفموية الأمثل ومنع مشاكل الأسنان.",
+    "General": "عام",
+    "Dental": "طب الأسنان",
+    "Care": "رعاية",
+    "Cosmetic": "تجميلي",
+    "Dentistry": "طب الأسنان",
+    "Preventive Care": "الرعاية الوقائية",
+    "Emergency Dental Care": "الرعاية الطبية الطارئة للأسنان",
+    "Periodontal Services": "خدمات اللثة",
+    "Oral Surgery": "جراحة الفم",
+    "Orthodontics": "تقويم الأسنان",
+    "Restorative Dentistry": "طب الأسنان الترميمي",
+    "Cosmetic Dentistry": "طب الأسنان التجميلي",
+    "Orthodontic Treatment": "علاج تقويم الأسنان",
+    "It involves the use of braces, aligners, and other orthodontic appliances to straighten teeth and correct bite issues.": "يتضمن استخدام الأقواس والمركبات والأجهزة التقويمية الأخرى لتقويم الأسنان وتصحيح مشاكل العضة.",
+    "Teeth Whitening ,Porcelain Veneers ,Dental Bonding, Smile Makeovers.": "تبييض الأسنان ,تقويم السيراميك ,تقويم الأسنان, تحسين الابتسامة.",
+    "Dental Fillings (Composite, Amalgam) ,Dental Crowns and Bridges ,Dental Implants ,Dentures and Partial Dentures.": "تعبئة الأسنان (مركبة، أملغمة) ,تيجان وجسور الأسنان ,زرع الأسنان ,تركيبات وجزئية أسنان.",
+    "Traditional Braces ,Invisalign ,Retainers and Orthodontic Appliances.": "تقويم الأسنان التقليدي ,تقويم الأسنان المخفي ,الأجهزة التقويمية.",
+    "Tooth Extraction ,Wisdom Teeth Removal ,Dental Implant Surgery ,Bone Grafting.": "قلع الأسنان ,استئصال ضرس الحكمة ,جراحة زراعة الأسنان ,زرع العظام.",
+    "Gum Disease Treatment ,Scaling and Root Planing ,Gum Recession Treatment ,Periodontal Surgery.": "علاج أمراض اللثة ,تنظيف وتنظيف الجذور ,علاج انكماش اللثة ,جراحة اللثة.",
+    "Emergency Exams ,Toothache Relief ,Emergency Tooth Repair ,Dental Trauma Treatment.": "فحوصات الطوارئ ,تخفيف آلام الأسنان ,إصلاح الأسنان في الطوارئ ,علاج إصابات الأسنان.",
+    "Regular Dental Checkups and Cleanings, Dental Exams and X-Rays, Fluoride Treatments, Dental Sealants.": "الفحوصات الدورية والتنظيفات الأسنان, الفحوصات الطبية والأشعة السينية, علاج ال"
 
   }
   

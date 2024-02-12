@@ -12,11 +12,10 @@ import 'swiper/css/scrollbar';
 
 const CardSwiper: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(1);
-
+  
   const handleSlideChange = (swiper: any) => {
     setActiveIndex(swiper.activeIndex + 1);
   };
-
   return (
     <div>
       <Swiper
@@ -44,6 +43,7 @@ const CardSwiper: React.FC = () => {
           return (
             <SwiperSlide key={index}>
               <ReviewCard activeIndex={activeIndex} index={index}  />
+
             </SwiperSlide>
           );
         })}

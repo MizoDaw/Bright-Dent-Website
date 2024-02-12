@@ -71,5 +71,40 @@
     "HotLine": "هاتلاین:",
     "Partners": "شراکتیەکان",
     "Learn more": "زیاتر بفەرمیوە",
-    "Categories":"هاوپۆلەکان"
+    "Categories":"هاوپۆلەکان",
+    "message": "پەیام",
+    "send_message": "پەیام بنێرە",
+    "Loading": "بارکردن",
+    "Leave your messages and your email.": "پەیامەکانت و ئیمەیلەکەت بۆمان بنووسە.",
+    "Contact Info": "زانیاری په‌یوه‌ندی",
+    "Privacy": "تایبه‌ت",
+    "About": "دێرباره‌",
+    "Our Privacy": "تایبه‌تی ما",
+    "Dental care encompasses practices aimed at maintaining oral hygiene and preventing/treating oral diseases, including regular checkups, cleanings, and treatments like fillings and implants. It plays a crucial role in promoting oral health, preventing dental issues, and enhancing overall well-being.": "گەرمەندکردنەوەی دندانەکان شێوازەکانی بەرگریی کردنی شوێنی دژخوشکردن و لێبوون/چارکردنی نهودەکانی دەندانەکان، بە تەواوی چەکسازیی بەرپێدان، پاککردن و چارکردنەکانی وەکو پاڵپاڵکردن و زرخانەکردن. ئەوە بەشدارییەکی بنەماکراوی لە دەستخوشکردنی سوودی فەلقیی، پێشگیریکردنی موشکانی دندان و زۆرکردنەوەی خوێنی خواردنی گشتی.",
+
+    "Cosmetic dentistry focuses on improving the appearance of teeth, gums, and smile. It includes procedures like teeth whitening, veneers, bonding, and orthodontic treatments aimed at enhancing the aesthetic appeal of the teeth and overall smile.": "تاوانمندی ئاستی دندانەکان گوڵیەکان، ئاسیکان و خۆشە. ئەمە پەرەیشانبەرێکان وەکو شەپژێکردنی دندان، وینیر، پێیوستکردن و چارکردنەکانی تەندروستی بۆ خواردنەوەی خوێنی دندانەکان و گوڵییەکانی گشتی.",
+
+    "General dentistry involves the diagnosis, prevention, and treatment of common dental issues affecting the teeth, gums, and oral cavity. It encompasses routine dental care such as checkups, cleanings, fillings, and extractions, aimed at maintaining optimal oral health and preventing dental problems.": "دندانپزیی گشتی دیاگنوزکردن، پێشگیری و چارکردنی موشکانی گشتی کۆمونە کە پەیوەندی بە دەندانەکان، ئاسیکان، و خواردنەوەی دەندانی دەندانەکان هەیە. ئەمە پەرەیشانبەرێکانی داخستنی دەندانییەکان و دڵخوازی بەرپێدان، پاککردن، پاڵپاڵکردن، و بڕۆکانەوە، بە تەواوی پاکیاندنی سەحی و دابینکردنی مشکلاتی دەندان.",
+
+    "General": "گشتی",
+    "Dental": "دندان",
+    "Care": "گەرمەندی",
+    "Cosmetic": "تاوانمندی ئاستی",
+    "Dentistry": "دندانپزی",
+    "Preventive Care": "گەرمەندی پێشگیری",
+    "Emergency Dental Care": "گەرمەندی دندانەکانی بەردەم",
+    "Periodontal Services": "خدمەتگوزارییەکانی ئاستی دندان",
+    "Oral Surgery": "جەرحەی دەندانی",
+    "Orthodontics": "تەندروستی",
+    "Restorative Dentistry": "دندانپزی گوڵدان",
+    "Cosmetic Dentistry": "دندانپزی تاوانمندی ئاستی",
+    "Orthodontic Treatment": "درێژکردنەوەی تەندروستی",
+    "It involves the use of braces, aligners, and other orthodontic appliances to straighten teeth and correct bite issues.": "ئەمە پەیوەندی بە برێسەکان، هاوڕێکان، و ئامێزانی تەندروستی تر بکات بۆ چوارەندانەوە و چاککردنی مشکلاتی خواردنەوە.",
+
+    "Teeth Whitening ,Porcelain Veneers ,Dental Bonding, Smile Makeovers.": "سپیلکردنی دەندان، ڤینێرەی سفیا، پێیوستکردنی دندان، و چارکردنی گوڵە.",
+
+    "Dental Fillings (Composite, Amalgam) ,Dental Crowns and Bridges ,Dental Implants ,Dentures and Partial Dentures.": "تەندروستی دەندان (چۆبارەی کۆمپۆزیت، ئامێگام)، چاکۆک و پلات، زرخانەی دەندان، و دندانە"
+
+
+
 }
