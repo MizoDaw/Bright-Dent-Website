@@ -54,13 +54,14 @@ const Header = () => {
           <li> <a href='/#Update'>{t('blog')}</a> </li>
           <li> <a href='/#Reviews'>{t('Reviews')}</a> </li>
           <li> <a href='/about'>{t('About')}</a> </li>
-          <li> <a href='/privacy'>{t('Privcay')}</a> </li>
+          <li> <a href='/privacy'>{t('Privacy')}</a> </li>
           <li className='translate_link'> <Translate/></li>
           <li> <div  onClick={showModal}>{t('Contact Us')} <FaArrowAltCircleRight /></div> </li>
         </ul>
         <div className='MenuNav'>
           <WithDrawer
-            title='Nav Links'
+            title='Bright Dent'
+            
             button={<Button icon={<MenuOutlined />} type='primary' />}
           >
         <ul className='DrawerLinks'>

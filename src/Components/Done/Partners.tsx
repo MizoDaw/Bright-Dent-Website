@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 const Partners = () => {
     const {t} = useTranslation();
-    const PartnersArray = ["2", "2","2","2", "2","2","2", "2"];
+    const PartnersArray = ["2"];
 
     return (
         <div className='Partners'>

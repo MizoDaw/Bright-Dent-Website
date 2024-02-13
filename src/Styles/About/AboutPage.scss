@@ -14,7 +14,7 @@
         margin-top: 2vw;
     }
    .Description_title{
-        display: flex;justify-content: center;align-items: center;
+        display: flex;justify-content: center;align-items: center; flex-direction: column-reverse;
         .title{
             text-align: center;
             font-size: 50px;

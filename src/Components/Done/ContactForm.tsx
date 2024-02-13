@@ -32,13 +32,13 @@ const ContactForm = ({isModalOpen,setIsModalOpen}:any) => {
 
     mutate({...value})
       if(isSuccess){
+        toast.success(t("Send Data Successfully"))
         setMessage('')
         setName('')
         setEmail('')
         setIsModalOpen(false)
       }
     }
-
 
     const handleCancel = () => {
       setMessage('')

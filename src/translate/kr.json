@@ -64,7 +64,6 @@
     "About us": "دەربارەی ئێمە",
     "Provides services to the organization of international, medical tourism in leading hospitals and medical centers in Iraq.": "خدماتەکانیان بۆ ڕێگای چاودێری گشتی، گرنگی تایبەتمەندیی نیشاندانی پزیشکی لە هۆسپیتاڵەکانی بزرگ و نیشاندانی پزیشکی لە ژنێکی عێراق.",
     "Like-themes 2023 © All Rights reserved SDNone": "Like-themes 2023 © هەموو مافەکان پارێزراون SDNone",
-
     "Recent news": "وەرزی نوێ",
     "Explore": "پشکنین",
     "Address": "ناونیشان:",
@@ -81,11 +80,8 @@
     "About": "دێرباره‌",
     "Our Privacy": "تایبه‌تی ما",
     "Dental care encompasses practices aimed at maintaining oral hygiene and preventing/treating oral diseases, including regular checkups, cleanings, and treatments like fillings and implants. It plays a crucial role in promoting oral health, preventing dental issues, and enhancing overall well-being.": "گەرمەندکردنەوەی دندانەکان شێوازەکانی بەرگریی کردنی شوێنی دژخوشکردن و لێبوون/چارکردنی نهودەکانی دەندانەکان، بە تەواوی چەکسازیی بەرپێدان، پاککردن و چارکردنەکانی وەکو پاڵپاڵکردن و زرخانەکردن. ئەوە بەشدارییەکی بنەماکراوی لە دەستخوشکردنی سوودی فەلقیی، پێشگیریکردنی موشکانی دندان و زۆرکردنەوەی خوێنی خواردنی گشتی.",
-
     "Cosmetic dentistry focuses on improving the appearance of teeth, gums, and smile. It includes procedures like teeth whitening, veneers, bonding, and orthodontic treatments aimed at enhancing the aesthetic appeal of the teeth and overall smile.": "تاوانمندی ئاستی دندانەکان گوڵیەکان، ئاسیکان و خۆشە. ئەمە پەرەیشانبەرێکان وەکو شەپژێکردنی دندان، وینیر، پێیوستکردن و چارکردنەکانی تەندروستی بۆ خواردنەوەی خوێنی دندانەکان و گوڵییەکانی گشتی.",
-
     "General dentistry involves the diagnosis, prevention, and treatment of common dental issues affecting the teeth, gums, and oral cavity. It encompasses routine dental care such as checkups, cleanings, fillings, and extractions, aimed at maintaining optimal oral health and preventing dental problems.": "دندانپزیی گشتی دیاگنوزکردن، پێشگیری و چارکردنی موشکانی گشتی کۆمونە کە پەیوەندی بە دەندانەکان، ئاسیکان، و خواردنەوەی دەندانی دەندانەکان هەیە. ئەمە پەرەیشانبەرێکانی داخستنی دەندانییەکان و دڵخوازی بەرپێدان، پاککردن، پاڵپاڵکردن، و بڕۆکانەوە، بە تەواوی پاکیاندنی سەحی و دابینکردنی مشکلاتی دەندان.",
-
     "General": "گشتی",
     "Dental": "دندان",
     "Care": "گەرمەندی",
@@ -100,10 +96,29 @@
     "Cosmetic Dentistry": "دندانپزی تاوانمندی ئاستی",
     "Orthodontic Treatment": "درێژکردنەوەی تەندروستی",
     "It involves the use of braces, aligners, and other orthodontic appliances to straighten teeth and correct bite issues.": "ئەمە پەیوەندی بە برێسەکان، هاوڕێکان، و ئامێزانی تەندروستی تر بکات بۆ چوارەندانەوە و چاککردنی مشکلاتی خواردنەوە.",
-
     "Teeth Whitening ,Porcelain Veneers ,Dental Bonding, Smile Makeovers.": "سپیلکردنی دەندان، ڤینێرەی سفیا، پێیوستکردنی دندان، و چارکردنی گوڵە.",
+    "Dental Fillings (Composite, Amalgam) ,Dental Crowns and Bridges ,Dental Implants ,Dentures and Partial Dentures.": "تەندروستی دەندان (چۆبارەی کۆمپۆزیت، ئامێگام)، چاکۆک و پلات، زرخانەی دەندان، و دندانە",
+    "loading":"بارکردن...",
+    "Privcay":"تایبەتی",
+    "Happy Partner":"پاشای خۆشحال",
+    "I used to dread going to the dentist, but Dr. Smith and her team changed that! They're so gentle and caring.":"من زۆرت بە چۆنی دەندانەکان بچم بۆ نەخۆشیم، بەڵام د. سمیت و تیمی هەرەمەلەیان چاکبوون! ئەوانەی پیاو و چاوەڕێیان.",
+    "High Quality Services for You":"خزمەتگوزاریەکانی بەشداری بۆ تۆ",
+    "From The Blog":"لە لایەن بلاگەکەوە",
+    "Latest Update":"نوێترین نوێ",
+    "Regular Dental Checkups: Recommended every six months. Includes examination of teeth, gums, and mouth. Early detection of dental issues such as cavities.":"پشکنینی سەرەکیی دەندان: پێشنیاردراوە لە هەر شەش مانگ. تێیدا بەرزکردنی دەندان، ئاسی، و دەروازەکان دانراوە. دۆزینەوەی سەرەکی لەسەر مەشەقەکانی دەندان وەکو تسوس.",
+    "Daily Oral Hygiene Routine: Brushing teeth twice a day with fluoride toothpaste. Flossing daily to remove plaque and food particles between teeth.":"رۆژانە ناوەندی نیشکاکە: دووجار توانای دەندان بکەرەوە لەگەڵ مەخکی دژی نیشکە یەکەمی فلۆرید. رۆسکانی دوایی بکەرەوە بۆ لابردنی زانیاریەکانی چاوەڕێی و زۆرکردنی پاڵپاڵی دژی نیشکاکان.",
+    "Preventive Treatments: Application of dental sealants to protect molars from decay. Fluoride treatments to strengthen tooth enamel and prevent cavities.":"دەرمانە پێشگیری: دانانی خاڵکی ددەندان بۆ پاراستنی دەروازەکان لە سەر تسوس. دەرمانەکانی فلۆرید بۆ تەقوینەوەی میناکەی دەندان و پێوستەی تسوس.",
+    "Traditional Braces ,Invisalign ,Retainers and Orthodontic Appliances.": "بڕەچکەی سنوور، ئینڤیسالاین، چالاکگری و دەرمانەکانی تەندروستی.",
+    "Tooth Extraction ,Wisdom Teeth Removal ,Dental Implant Surgery ,Bone Grafting.": "لابردنی دندان، برداشکردنی دندانە خۆشمەرج، جەرحەی زرخانەی دندان، و جەرحەی دادان.",
+    "Gum Disease Treatment ,Scaling and Root Planing ,Gum Recession Treatment ,Periodontal Surgery.": "دڵخوازکردنی مەردەکانی چاو، چالاککردن و پلانکردنی مەڵاو، دڵخوازکردنی تاکوەکانی چاو، و جەرحەی دڵخوازکردن.",
+    "Emergency Exams ,Toothache Relief ,Emergency Tooth Repair ,Dental Trauma Treatment.": "پشکنینی بەرگەی بەردەم، چارەکردنی گوستان، چارەکردنی دندانە بەردەم، و دەرمانی تراومای دەندان.",
+    "Regular Dental Checkups and Cleanings, Dental Exams and X-Rays, Fluoride Treatments, Dental Sealants.": "پشکنینی رێکبەندەوەی دەندان و پاککردن، پشکنینی دەندان و بەرزکردن، پێوستەکردنی فلۆرید، و پاراستنی دەندان.",
+    "Who are we":"که‌ من ئه‌مێ",
+    "Please fill all input":"تکایە هەموو خانەکان پڕبکەن",
+    "Send Data Successfully":"باشە، داتایەک بەسەرکەوتویی ناردرا"
 
-    "Dental Fillings (Composite, Amalgam) ,Dental Crowns and Bridges ,Dental Implants ,Dentures and Partial Dentures.": "تەندروستی دەندان (چۆبارەی کۆمپۆزیت، ئامێگام)، چاکۆک و پلات، زرخانەی دەندان، و دندانە"
+
+
 
 
 
