@@ -2,48 +2,51 @@ import React, { memo } from 'react';
 import type { MenuProps } from 'antd';
 import { Button, Dropdown, Space } from 'antd';
 import { useChangeLanguage } from '../../Hooks/useChangeLanguage';
-import { useTranslation } from 'react-i18next';
-
+import { useTranslation } from 'react-i18next'
 const Translate: React.FC = () => {
   const { currentlanguage, changelanguage } = useChangeLanguage();
   const { t } = useTranslation();
 
   const EnLanguage = memo(() => (
     <div className="MenuChange" onClick={EnLanguageClickHandler}>
-      <img alt='' src='../Lang/En.svg' width={20} height={20} /> 
+       <img alt='' src='../Lang/En.svg' width={20} height={20} /> 
       {t('En')}
     </div>
   ));
   
   const ArLanguage = memo(() => (
-    <div className="MenuChange" onClick={ArLanguageClickHandler}>
+    <div  className="MenuChange" onClick={ArLanguageClickHandler}>
       <img alt='' src='../Lang/Ar.svg' width={20} height={20} /> 
       {t('Ar')}
     </div>
   ));
 
   const KrLanguage = memo(() => (
-    <div className="MenuChange" onClick={KrLanguageClickHandler}>
+    <div  className="MenuChange" onClick={KrLanguageClickHandler}>
       <img alt='' src='../Lang/kr.png' width={20} height={20} /> 
       {t('Kr')}
     </div>
   ));
 
+  
   const EnLanguageClickHandler = React.useCallback(() => {
-    changelanguage('en');
-    // window.location.reload(); // Reload the page after changing the language
+    if(!(currentlanguage == 'en')){
+      changelanguage('en');
+      window.location.reload();
+    }
   }, [changelanguage]);
   
   const ArLanguageClickHandler = React.useCallback(() => {
-    changelanguage('ar');
-    // window.location.reload(); // Reload the page after changing the language
-  }, [changelanguage]);
+    if(!(currentlanguage == 'ar')){
+      changelanguage('ar');
+      window.location.reload();
+    }  }, [changelanguage]);
 
   const KrLanguageClickHandler = React.useCallback(() => {
-    changelanguage('kr');
-    // window.location.reload(); // Reload the page after changing the language
-  }, [changelanguage]);
-  
+    if(!(currentlanguage == 'kr')){
+      changelanguage('kr');
+      window.location.reload();
+    }  }, [changelanguage]);
   
   const items: MenuProps['items'] = [
     {
@@ -78,7 +81,7 @@ const Translate: React.FC = () => {
 
   return (
     <Space direction="vertical">
-      <Dropdown menu={{ items }} placement="top">
+      <Dropdown menu={{ items }}  placement="top">
         <Button disabled>{languageComponent}</Button>
       </Dropdown>
     </Space>

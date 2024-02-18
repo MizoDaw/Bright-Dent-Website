@@ -24,10 +24,8 @@ i18n.use(initReactI18next).init({
   }
 });
 export const useChangeLanguage= () => {
-    const navigate = useNavigate();
     const [currentlanguage, setCurrentlanguage] = useState(localStorage.getItem('language') ?? 'en');
-    // const handleNavigate = () =>{
-    // }
+
     useEffect(() => {
 
       if (currentlanguage=== 'ar') {
@@ -45,7 +43,6 @@ export const useChangeLanguage= () => {
         document.body.classList.add('kr')
       }
       localStorage.setItem('language', currentlanguage);
-      // console.log('Current Language from localStorage:', localStorage.getItem('language'));
     }, [currentlanguage]);
   
     const changelanguage= useCallback((newlanguage:any) => {

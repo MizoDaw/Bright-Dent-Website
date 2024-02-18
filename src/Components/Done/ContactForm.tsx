@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Input, Modal,Button } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { useSendMessage } from '../../api/contact';
