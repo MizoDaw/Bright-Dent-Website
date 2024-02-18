@@ -31,17 +31,17 @@ const Translate: React.FC = () => {
 
   const EnLanguageClickHandler = React.useCallback(() => {
     changelanguage('en');
-    window.location.reload(); // Reload the page after changing the language
+    // window.location.reload(); // Reload the page after changing the language
   }, [changelanguage]);
   
   const ArLanguageClickHandler = React.useCallback(() => {
     changelanguage('ar');
-    window.location.reload(); // Reload the page after changing the language
+    // window.location.reload(); // Reload the page after changing the language
   }, [changelanguage]);
 
   const KrLanguageClickHandler = React.useCallback(() => {
     changelanguage('kr');
-    window.location.reload(); // Reload the page after changing the language
+    // window.location.reload(); // Reload the page after changing the language
   }, [changelanguage]);
   
   
