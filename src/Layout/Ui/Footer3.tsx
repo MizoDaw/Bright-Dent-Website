@@ -10,7 +10,7 @@ import { IoMdInformationCircle } from "react-icons/io";
 
 const Footer3 = () => {
   const {t} = useTranslation();
-  const {data} = useGetContactInfo();  
+  const {data,isLoading} = useGetContactInfo();  
 
   const exploreData = {
     title: t('Explore'),
@@ -45,11 +45,13 @@ const Footer3 = () => {
         <div>
           <h1>{t('Contact Info')}</h1>
           <span>
-            {data?.data.map((e:any) => (
+            {isLoading ? t("loading")
+            : data?.data.map((e:any) => (
               <div>
-               <IoMdInformationCircle/> <h6 className='work_time_h'>{e.key}: </h6> <p className='work_time_p'> {e.value}</p>
+                <IoMdInformationCircle/> <h6 className='work_time_h'>{e.key}: </h6> <p className='work_time_p'> {e.value}</p>
               </div>
-            ))}
+            ))
+            }
           </span>
         </div>
 

@@ -6,9 +6,8 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa6';
 import { useTranslation } from 'react-i18next';
 import { Tooltip } from 'antd';
 
-
-
 const NewHeroSection = () => {
+
   const {t} = useTranslation()
 
   const data = [
@@ -36,7 +35,6 @@ const NewHeroSection = () => {
   const [infoData, setInfoData] = useState(data[0]);
   const [key, setKey] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
  
@@ -61,9 +59,6 @@ const NewHeroSection = () => {
     setInfoData(data[index]);
     setKey(index);
   };
-
-  const stopAnimation =  900;
-
 
   return (
     <>

@@ -18,13 +18,13 @@ const About = ({isAbout,InfoData,isLoading}:InfoInterface) => {
             
             <div className='Description_title'>
 
-                {isLoading ? <div className='center'>{t("Loading")}...</div> : ""}
                 
                 <h1 className='title'>{ isAbout ? t("Who are we"): t("Our Privacy") }</h1>
 
             </div>
 
             <div className='description text-center'>
+            {isLoading ? <div className='center'>{t("Loading")}...</div> : ""}
                 {InfoData?.data?.translations?.at(0)?.content}
             </div>
             
