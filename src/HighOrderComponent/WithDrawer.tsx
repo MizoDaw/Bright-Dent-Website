@@ -41,10 +41,3 @@ const WithDrawer: React.FC<WithDrawerProps> = ({ button, children,title ="Basic 
 };
 
 export default WithDrawer;
-
-
-//   <WithDrawer
-//   button={<Button type="primary">Open</Button>}
-// >
-//   {/* Your content goes here */}
-// </WithDrawer>

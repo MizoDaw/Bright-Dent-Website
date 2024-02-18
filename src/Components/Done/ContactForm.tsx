@@ -65,7 +65,7 @@ const ContactForm = ({isModalOpen,setIsModalOpen}:any) => {
             onChange={(e) =>setMessage(e.target.value)}            
             placeholder={t('message')} 
             />
-                {isLoading  ? <button className='button'>{t("Loading")}...</button> :<button className='button' type='submit' >{t("send_message")}</button>}
+            {isLoading  ? <button className='button'>{t("Loading")}...</button> :<button className='button' type='submit' >{t("send_message")}</button>}
           </Form>
           )}
         </Formik>

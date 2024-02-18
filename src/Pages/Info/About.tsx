@@ -1,13 +1,14 @@
 import React from 'react'
 import { useGetAboutUs } from '../../api/app_info'
-import InfoLayout from '../../Layout/Ui/InfoLayout'
+import InfoLayoutDynamic from '../../Layout/Ui/InfoLayoutDynamic'
 
 const About = () => {
   const {data , isLoading} = useGetAboutUs();
 
   return (
-      <InfoLayout 
-      isAbout={true} 
+      <InfoLayoutDynamic 
+      InfoTitle={"About us"}
+      InfoText={"Who are we"} 
       InfoData={data}
       isLoading={isLoading}/>
   )

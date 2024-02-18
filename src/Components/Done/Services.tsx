@@ -11,7 +11,8 @@ import { useTranslation } from "react-i18next";
 
 const Services = () => {
     const {t} = useTranslation();
-        const Data: any = [
+    
+    const Data: any = [
            { h1:t("Orthodontic Treatment"),  title: t("It involves the use of braces, aligners, and other orthodontic appliances to straighten teeth and correct bite issues."), icon: <LiaToothSolid /> }
         , { h1:t("Cosmetic Dentistry"),  title: t("Teeth Whitening ,Porcelain Veneers ,Dental Bonding, Smile Makeovers."), icon: <LiaToothSolid />    }
         , { h1:t("Restorative Dentistry"),  title: t("Dental Fillings (Composite, Amalgam) ,Dental Crowns and Bridges ,Dental Implants ,Dentures and Partial Dentures."), icon: <LiaToothSolid /> }
@@ -21,6 +22,7 @@ const Services = () => {
         , { h1:t("Emergency Dental Care"),  title: t("Emergency Exams ,Toothache Relief ,Emergency Tooth Repair ,Dental Trauma Treatment."), icon: <LiaToothSolid /> }
         , {h1:t("Preventive Care"),   title: t("Regular Dental Checkups and Cleanings, Dental Exams and X-Rays, Fluoride Treatments, Dental Sealants."), icon: <LiaToothSolid /> }
     ]
+
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       };
@@ -47,14 +49,9 @@ const Services = () => {
                                 {item?.title}
                                 </p>
                                 <Link onClick={scrollToTop} className="Link" to="/">
-                                <ImArrowUpRight2 />
-
-
+                                    <ImArrowUpRight2 />
                                 </Link>
-
-
                             </div>
-
                         )
                     })}
                 </Visibale>

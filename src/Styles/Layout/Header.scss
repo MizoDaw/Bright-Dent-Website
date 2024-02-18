@@ -8,11 +8,7 @@
     box-shadow:  none !important;
     width: 100%;
     transform: translateX(0%);
-    padding-inline: 5%;
-
-
-
-    
+    padding-inline: 5%;    
   }
   .Blog_Page .HeaderStart{
     background-color: transparent !important;
@@ -126,10 +122,7 @@
         background-color: var(--primary);
         color: var(--vg);
         border-width: 0px;
-
         @include Hover;
-
-
     }
 
     /* List */

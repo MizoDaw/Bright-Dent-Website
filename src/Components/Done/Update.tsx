@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 const Update = () => {
-    const navigate = useNavigate();
     const {t} = useTranslation();
     const updatesData = [
       
@@ -12,7 +11,6 @@ const Update = () => {
     ];
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        navigate("/")
       };
     return (
         <div className='Update' id="Update">

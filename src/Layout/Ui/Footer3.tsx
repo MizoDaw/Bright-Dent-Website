@@ -1,8 +1,6 @@
 import React from 'react';
 import { FaClock, FaLocationDot, FaPhone } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from "react-icons/io";
-import { FaTimes } from 'react-icons/fa';
 import { IoChatbubble } from "react-icons/io5";
 import { useTranslation } from 'react-i18next';
 import { useGetContactInfo } from '../../api/contact';
